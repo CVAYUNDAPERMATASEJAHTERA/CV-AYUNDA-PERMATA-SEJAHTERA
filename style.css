@@ -1,112 +1,226 @@
-<!-- KONTAK -->
-<section id="kontak" class="section">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
 
-<div class="container">
+body{
+background:#111;
+color:#fff;
+line-height:1.7;
+}
 
-<h2 class="section-title">Hubungi Kami</h2>
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
 
-<div class="contact-box">
+header{
+background:#000;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
 
-<div class="contact-info">
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-<h3>CV Ayunda Permata Sejahtera</h3>
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
 
-<p><i class="fa-solid fa-location-dot"></i>
-Dusun Barat, Desa Jarin, Kecamatan Pademawu,
-Kabupaten Pamekasan, Jawa Timur</p>
+.logo img{
+height:60px;
+}
 
-<p><i class="fa-solid fa-phone"></i>
-082132279955</p>
+.logo h1{
+color:#FFD700;
+font-size:30px;
+}
 
-<p><i class="fa-solid fa-envelope"></i>
-ayundaofficial12@gmail.com</p>
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
 
-<a href="https://wa.me/6282132279955" class="btn">
-Chat WhatsApp
-</a>
+nav ul li a{
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+transition:.3s;
+}
 
-</div>
+nav ul li a:hover{
+color:#FFD700;
+}
 
-<div class="contact-form">
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("images/bg.jpg");
+background-size:cover;
+background-position:center;
+}
 
-<form>
+.hero h2{
+font-size:50px;
+color:#FFD700;
+margin-bottom:20px;
+}
 
-<input type="text" placeholder="Nama Lengkap">
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
 
-<input type="email" placeholder="Email">
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FFD700;
+color:#000;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
+}
 
-<input type="text" placeholder="Nomor WhatsApp">
+.btn:hover{
+background:#fff;
+}
 
-<textarea rows="6" placeholder="Pesan"></textarea>
+.section{
+padding:80px 0;
+}
 
-<button type="submit">
-Kirim Pesan
-</button>
+.section-title{
+text-align:center;
+font-size:36px;
+color:#FFD700;
+margin-bottom:40px;
+}
 
-</form>
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
 
-</div>
+.card{
+background:#1b1b1b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
 
-</div>
+.card:hover{
+transform:translateY(-8px);
+}
 
-</div>
+.card i{
+font-size:45px;
+color:#FFD700;
+margin-bottom:20px;
+}
 
-</section>
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
 
-<!-- GOOGLE MAPS -->
+.product-card{
+background:#1b1b1b;
+border-radius:15px;
+overflow:hidden;
+text-align:center;
+}
 
-<section class="section">
+.product-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
 
-<div class="container">
+.product-card h3{
+margin:15px;
+color:#FFD700;
+}
 
-<h2 class="section-title">Lokasi Kami</h2>
+.product-card p{
+padding:0 15px 20px;
+}
 
-<iframe
-src="https://www.google.com/maps?q=Pademawu,Pamekasan&output=embed"
-width="100%"
-height="400"
-style="border:0;border-radius:10px;"
-loading="lazy">
-</iframe>
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-</div>
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+}
 
-</section>
+.contact-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:40px;
+}
 
-<!-- FOOTER -->
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+}
 
-<footer>
+.contact-form button{
+padding:15px;
+width:100%;
+background:#FFD700;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
 
-<div class="container">
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+}
 
-<h3>CV Ayunda Permata Sejahtera</h3>
-
-<p>
-Perusahaan manufaktur hasil tembakau berkualitas
-dengan komitmen menjaga cita rasa dan kepuasan pelanggan.
-</p>
-
-<p>
-
-© 2026 CV Ayunda Permata Sejahtera.
-Hak Cipta Dilindungi Undang-Undang.
-
-</p>
-
-</div>
-
-</footer>
-
-<!-- WHATSAPP -->
-
-<a href="https://wa.me/6282132279955"
-class="whatsapp">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+color:white;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
